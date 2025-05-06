@@ -8,7 +8,9 @@ document.getElementById('form').addEventListener('submit', function(e) {
     const nombre = document.getElementById('nombre').value;
     const correo = document.getElementById('email').value;
     const mensaje = document.getElementById('mensaje').value;
-    const nameContainer= document.getElementById("username");
+    
+    //const nameContainer= document.getElementById("userGuardado");
+   // const inputBoton = document.getElementById("btn");
   
     // Creamos el objeto usuario y le asignamos los valores de los inputs
     const usuario = {
