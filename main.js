@@ -31,11 +31,11 @@ function mostrarUsuario() {
     const usuarios = JSON.parse(localStorage.getItem('user'));  
     // Aquí estoy parseando el string que guardé en el localStorage para convertirlo de nuevo a objeto
     if (usuarios) {
-                         // le estoy diciendo que el id de la etiqueta donde quiero mostrarlo es userGuardado
-        // y que el contenido de esa etiqueta sea un string con los valores del objeto
-        document.getElementById('userGuardado').innerHTML = `<p>Nombre: ${usuarios.Nombre}</p>
-            <p>Correo: ${usuarios.Correo}</p>
-            <p>Mensaje: ${usuarios.Mensaje}</p>`;
+                                   // le estoy diciendo que el id de la etiqueta donde quiero mostrarlo es userGuardado
+                                  // y que el contenido de esa etiqueta sea un string con los valores del objeto
+        document.getElementById('userGuardado').innerHTML = `<p><strong>Nombre:</strong> ${usuarios.Nombre}</p>
+            <p><strong>Correo:</strong> ${usuarios.Correo}</p>
+            <p><strong>Mensaje: </strong> ${usuarios.Mensaje}</p>`;
     }
 };
 
